@@ -1,4 +1,30 @@
 .product {
     background-color: #f2f2f2;
     border-radius: 10px;
+    position: relative;
+}
+
+.product:hover .image {
+    transform: scale(0.9);
+}
+
+.cartBtn {
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    border: 1px solid #b9005b;
+    color: #b9005b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    top: 10px;
+    right: 15px;
+    transition: all 8s ease-in-out;
+    z-index: 99;
+}
+
+.cartBtn:hover {
+    background-color: #b9005b;
+    color: #fff;
 }
