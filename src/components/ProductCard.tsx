@@ -1,17 +1,20 @@
-import { Button } from "react-bootstrap";
 import { BsCartPlusFill, BsStarHalf } from "react-icons/bs";
+import { useShoppingCart } from "../context/ShoppingCartContext";
 import { formatCurrency } from "../utilities/formatCurrency";
 type ProductProps = {
     id: number;
     name: string;
     price: number;
+    rating: number;
     imgUrl: string;
 };
 
-const ProductCard = ({ id, name, price, imgUrl }: ProductProps) => {
+const ProductCard = ({ id, name, price, rating, imgUrl }: ProductProps) => {
+    const { increaseCartQuantity } = useShoppingCart();
+
     return (
         <div className="product">
-            <div className="cartBtn">
+            <div className="cartBtn" onClick={() => increaseCartQuantity(id)}>
                 <BsCartPlusFill />
             </div>
             <div className="text-center">
@@ -32,7 +35,8 @@ const ProductCard = ({ id, name, price, imgUrl }: ProductProps) => {
 
                 <div className="d-flex justify-content-between align-items-center">
                     <div className="d-flex justify-content-center align-items-center gap-2">
-                        <BsStarHalf color="#B9005B" /> <span>4.3</span>
+                        <BsStarHalf color="#B9005B" />{" "}
+                        <span className="fw-bold">{rating}</span>
                     </div>
                     <span className="text-success fw-bold">
                         {formatCurrency(price)}

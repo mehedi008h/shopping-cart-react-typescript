@@ -3,24 +3,56 @@
         "id": 1,
         "name": "Ceramic Body Table Lamp",
         "price": 10.99,
+        "rating": 3.4,
         "imgUrl": "/images/product-1.jpg"
     },
     {
         "id": 2,
-        "name": "Computer",
+        "name": "Large Sofa Set",
         "price": 1199,
+        "rating": 4.4,
         "imgUrl": "/images/product-2.jpg"
     },
     {
         "id": 3,
-        "name": "Banana",
+        "name": "Shoe Rake",
         "price": 1.05,
+        "rating": 4.7,
         "imgUrl": "/images/product-3.jpg"
     },
     {
         "id": 4,
-        "name": "Car",
+        "name": "Chair",
         "price": 14000,
+        "rating": 5.0,
         "imgUrl": "/images/product-4.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Chair",
+        "price": 10.99,
+        "rating": 3.4,
+        "imgUrl": "/images/product-5.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Fan",
+        "price": 1199,
+        "rating": 4.4,
+        "imgUrl": "/images/product-6.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Chair",
+        "price": 1.05,
+        "rating": 3.4,
+        "imgUrl": "/images/product-7.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Chair",
+        "price": 14000,
+        "rating": 2.4,
+        "imgUrl": "/images/product-8.jpg"
     }
 ]

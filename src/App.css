@@ -2,6 +2,7 @@
     background-color: #f2f2f2;
     border-radius: 10px;
     position: relative;
+    transition: all ease-in-out 8s;
 }
 
 .product:hover .image {
@@ -20,7 +21,7 @@
     border-radius: 50%;
     top: 10px;
     right: 15px;
-    transition: all 8s ease-in-out;
+    transition: all;
     z-index: 99;
 }
 

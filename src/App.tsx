@@ -1,18 +1,17 @@
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import Header from "./components/Header";
-import Home from "./pages/Home";
 import Store from "./pages/Store";
+import { ShoppingCartProvider } from "./context/ShoppingCartContext";
 
 function App() {
     return (
-        <div>
+        <ShoppingCartProvider>
             <Header />
             <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/store" element={<Store />} />
+                <Route path="/" element={<Store />} />
             </Routes>
-        </div>
+        </ShoppingCartProvider>
     );
 }
 
